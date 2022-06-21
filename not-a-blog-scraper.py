@@ -36,11 +36,14 @@ def not_a_blog(soup):
             date = item.find('div', class_ = 'thedate').text
             print(f'{title}, {date}')
     except:
-        print(f'There were no blogs in {month} of {year}.')
+        #print(f'There were no blogs in {month} of {year}.')
+        return f'There were no blogs in {month} of {year}.'
     if len(divs) > 1:
-        print(f'\nThere were {len(divs)} blogs in {month}, {year}.')
+        #print(f'\nThere were {len(divs)} blogs in {month}, {year}.')
+        return f'\nThere were {len(divs)} blogs in {month}, {year}.'
     elif len(divs) < 2:
-        print(f'\nThere was {len(divs)} blog in {month}, {year}.')
+        #print(f'\nThere was {len(divs)} blog in {month}, {year}.')
+        return f'\nThere was {len(divs)} blog in {month}, {year}.'
 
 content = extract()
 print(not_a_blog(content))
