@@ -14,11 +14,11 @@ months = range(1,13)
 month = randrange(1, 13)
 todaysDate = today.strftime("%B %d, %Y")
 
-def printYears():
+def print_years():
     for year in years:
         return year
 
-def getMonths():
+def get_months():
     for month in months:
         return month
 
@@ -28,7 +28,7 @@ def extract():
     soup = BeautifulSoup(r.content, 'html.parser')
     return soup
 
-def notABlog(soup):
+def not_a_blog(soup):
     divs = soup.find_all('div', class_ = 'post-main')
     try:
         for item in divs:
@@ -43,4 +43,4 @@ def notABlog(soup):
         print(f'\nThere was {len(divs)} blog in {month}, {year}.')
 
 content = extract()
-print(notABlog(content))
+print(not_a_blog(content))
