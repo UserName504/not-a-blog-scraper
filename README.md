@@ -4,4 +4,9 @@ A webscraper, to scrape data from George R.R. Martin's [Not A Blog](https://geor
 
 # Setup:
 
-Coming soon...
+## Setup
+
+Be sure to use a virtual environment:
+> ```sh
+> $ python3 -m venv venv
+> ```
