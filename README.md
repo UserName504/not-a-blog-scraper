@@ -24,5 +24,6 @@ Once the venv has been activated, install requirements:
 
 # PROGRESS:
 
-Monday, June27th, 2022:
+__Monday, June 27th, 2022:__
+
 This scraper prints up to ten of the most recent blogs from a random month.
