@@ -21,3 +21,8 @@ Once the venv has been activated, install requirements:
 > ```sh
 > $ pip install -r requirements.txt
 > ```
+
+# PROGRESS:
+
+Monday, June27th, 2022:
+This scraper prints up to ten of the most recent blogs from a random month.
