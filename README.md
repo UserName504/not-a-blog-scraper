@@ -17,13 +17,7 @@ To activate the virtual environment, run the following command:
 
 Upon activation, run `pip list`. Only `pip` and `setuptools` should be installed in the virtual environment.
 
-Once the venv has been activated, install requirements:
+To install requirements, run:
 > ```sh
 > $ pip install -r requirements.txt
 > ```
-
-# PROGRESS:
-
-__Monday, June 27th, 2022:__
-
-This scraper prints up to ten of the most recent blogs from a random month.
