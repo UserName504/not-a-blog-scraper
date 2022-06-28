@@ -14,7 +14,7 @@ months = range(1,13)
 month = randrange(1, 13)
 todaysDate = today.strftime("%B %d, %Y")
 
-def print_years():
+def get_years():
     for year in years:
         return year
 
