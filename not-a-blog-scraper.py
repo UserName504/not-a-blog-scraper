@@ -7,12 +7,12 @@ from random import randrange
 import os
 
 today = dt.today()
-currentYear = today.year
-years = range(2005, currentYear+1)
-year = randrange(2005, currentYear+1)
+current_year = today.year
+years = range(2005, current_year+1)
+year = randrange(2005, current_year+1)
 months = range(1,13)
 month = randrange(1, 13)
-todaysDate = today.strftime("%B %d, %Y")
+todays_date = today.strftime("%B %d, %Y")
 
 def get_years():
     for year in years:
