@@ -45,3 +45,27 @@ def not_a_blog(soup):
 
 content = extract()
 print(not_a_blog(content))
+
+"""
+def not_a_blog(soup):
+    divs = soup.find_all('div', class_ = 'post-main')
+    try:
+        for item in divs:
+            title = item.find('a').text
+            date = item.find('div', class_ = 'thedate').text
+            #print(f'{title}, {date}')
+            with open('not_a_blog_scraper.csv', 'w') as csvfile:
+                fieldnames = ['Title', 'Date']
+                writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+                writer.writeheader()
+                writer.writerow({'Title': {title}, 'Date': {date}})
+    except:
+        print(f'There were no blogs in {month} of {year}.')
+    if len(divs) > 1:
+        return f'\nThere were {len(divs)} blogs in {month}, {year}.'
+    elif len(divs) < 2:
+        return f'\nThere was {len(divs)} blog in {month}, {year}.'
+
+content = extract()
+print(not_a_blog(content))
+"""
