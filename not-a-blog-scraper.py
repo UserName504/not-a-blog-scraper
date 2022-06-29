@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime as dt
 from random import randrange
 import os
+import csv
 
 today = dt.today()
 current_year = today.year
