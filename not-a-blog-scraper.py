@@ -1,11 +1,11 @@
+import os
+import csv
 import json
 import sqlite3
 import requests
+from random import randrange
 from bs4 import BeautifulSoup
 from datetime import datetime as dt
-from random import randrange
-import os
-import csv
 
 today = dt.today()
 current_year = today.year
@@ -35,17 +35,22 @@ def not_a_blog(soup):
         for item in divs:
             title = item.find('a').text
             date = item.find('div', class_ = 'thedate').text
+            #
+            date_length = len(date)
+            #
             print(f'{title}, {date}')
+
     except:
         return f'There were no blogs in {month} of {year}.'
     if len(divs) > 1:
         return f'\nThere were {len(divs)} blogs in {month}, {year}.'
-    elif len(divs) < 2:
+    #elif len(divs) < 2:
+    elif len(divs) == 1:
         return f'\nThere was {len(divs)} blog in {month}, {year}.'
 
 content = extract()
 print(not_a_blog(content))
-
+#not_a_blog(content)
 """
 def not_a_blog(soup):
     divs = soup.find_all('div', class_ = 'post-main')
