@@ -26,5 +26,5 @@ To install requirements, run:
 
 ## Future work:
 
-⋅⋅* Scrape ALL data, not just one month at a time.
-⋅⋅* Output data to `.csv` file.
+* Scrape ALL data, not just one month at a time.
+* Output data to `.csv` file.
