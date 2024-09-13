@@ -2,7 +2,7 @@
 
 # not-a-blog-scraper
 
-An exercise in webscraping, to scrape data from George R.R. Martin's [Not A Blog](https://georgerrmartin.com/notablog/), in particular.
+Dealing with data from George R.R. Martin's [Not A Blog](https://georgerrmartin.com/notablog/).
 
 ## Setup
 
@@ -23,8 +23,3 @@ To install requirements, run:
 > ```sh
 > $ pip install -r requirements.txt
 > ```
-
-## Future work:
-
-* Scrape ALL data, not just one month at a time.
-* Output data to `.csv` file.
