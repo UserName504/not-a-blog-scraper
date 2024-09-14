@@ -22,10 +22,10 @@ def count_blogs_by_month(file_path):
         print(f"{month_year}: {count} blogs")
     
     max_month = max(blog_counts, key=blog_counts.get)
-    print(f"\nMonth with the most blogs: {max_month} ({blog_counts[max_month]} blogs)")
+    print(f"\nThe month with the most blogs was: {max_month} ({blog_counts[max_month]} blogs)")
     
     min_month = min(blog_counts, key=blog_counts.get)
-    print(f"Month with the least blogs: {min_month} ({blog_counts[min_month]} blogs)")
+    print(f"The month with the least blogs was: {min_month} ({blog_counts[min_month]} blogs)")
 
 def count_blogs_by_year(file_path):
     blog_counts = defaultdict(int)
